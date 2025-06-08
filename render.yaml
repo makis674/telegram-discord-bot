@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: telegram-discord-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: WEBHOOK_ΚΕΝΤΡΙΚΟ
+        sync: false
+      - key: WEBHOOK_ΕΠΙΒΙΩΣΗ
+        sync: false
+      - key: WEBHOOK_ΕΦΕΔΡΕΙΑ
+        sync: false
+      - key: WEBHOOK_ΥΓΕΙΑ
+        sync: false
+      - key: WEBHOOK_ΓΕΩΠΟΛΙΤΙΚΑ
+        sync: false
