@@ -2,7 +2,7 @@ services:
   - type: web
     name: telegram-discord-bot
     runtime: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r src/requirements.txt
     startCommand: python src/main.py
     envVars:
       - key: TELEGRAM_TOKEN
