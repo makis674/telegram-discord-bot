@@ -3,7 +3,7 @@ services:
     name: telegram-discord-bot
     runtime: python
     buildCommand: pip install -r requirements.txt
-   startCommand: python main.py
+   startCommand: python bot_pro_youtube_title_FINAL_OK.py
     envVars:
       - key: TELEGRAM_TOKEN
         sync: false
